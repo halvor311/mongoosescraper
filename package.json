@@ -1,0 +1,27 @@
+{
+  "name": "mongoosescraper",
+  "version": "1.0.0",
+  "description": "In this project I created a website that scrapes news articles. I used express, express-handlebars, mongoose, body-parser, cheerio, and request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halvor311/mongoosescraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halvor311/mongoosescraper/issues"
+  },
+  "homepage": "https://github.com/halvor311/mongoosescraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.7",
+    "request": "^2.83.0"
+  }
+}
