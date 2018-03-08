@@ -30,6 +30,6 @@ var routes = require("./scripts/scrape.js")
 app.use("/", routes);
 app.use("/update", routes);
 app.use("/create", routes);
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log("App running on port " + port);
   });
