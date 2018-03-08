@@ -9,11 +9,11 @@ var axios = require("axios");
 var logger = require("morgan");
 var db = require("./models");
 var port = process.env.PORT || 3000;
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-// mongoose.Promise = Promise;
-// mongoose.connect(MONGODB_URI, {
-//     useMongoClient: true
-// });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, {
+    useMongoClient: true
+});
 app.use(logger("dev"));
 // Body Parser
 app.use(express.urlencoded({extended: true}));
@@ -31,5 +31,5 @@ app.use("/", routes);
 app.use("/update", routes);
 app.use("/create", routes);
 app.listen(3000, function() {
-    console.log("App running on port 3000!");
+    console.log("App running on port " + port);
   });
