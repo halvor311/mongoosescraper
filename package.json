@@ -4,7 +4,7 @@
   "description": "In this project I created a website that scrapes news articles. I used express, express-handlebars, mongoose, body-parser, cheerio, and request.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/halvor311/mongoosescraper#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
     "request": "^2.83.0"
   }
 }
